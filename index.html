@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Email</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/spinner.css">
+    <link rel="shortcut icon" href="img/icon_email.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <section class="container">
+        <div class="head-email">
+            <h2>E-mail</h2>
+            <div id="toggle">
+                <i class="indicator"></i>
+            </div>
+        </div>
+        <div class="contact-img"></div>
+
+        <form class="form" id="form">
+            <div>
+                <div class="field">
+                    <label class="field-label" for="email">E-mail</label>
+                    <input id="email" class="field-input" type="email" placeholder="E-mail destination">  
+                </div>
+            </div>
+            <div>
+                <div class="field">
+                    <label class="field-label" for="matter">Matter</label>
+                    <input id="matter" class="field-input" type="text" placeholder="Matter E-mail">  
+                </div>
+            </div>
+            <div>
+                <div class="field">
+                    <label class="field-label" for="message">Message</label>
+                    <textarea id="message" class="field-input field-input-textarea"></textarea>
+                </div>
+            </div>
+            <div id="buttons" class="field">
+                <input class="button button-submit opacity" type="submit" value="Send" disabled>
+                <input class="button button-reset" type="reset" value="reset">
+            </div>
+
+            <div id="spinner" class="hiden">
+            <div class="spinner">
+                <div class="rect1"></div>
+                <div class="rect2"></div>
+                <div class="rect3"></div>
+                <div class="rect4"></div>
+                <div class="rect5"></div>
+              </div>
+            </div>
+
+        </form>
+    </section>
+
+    <footer></footer>
+    <script src="js/app.js"></script>
+</body>
+</html>
